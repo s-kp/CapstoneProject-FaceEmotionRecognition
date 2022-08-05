@@ -11,7 +11,7 @@ from tensorflow.keras.preprocessing.image import img_to_array
 
 
 
-classifier = load_model('mobilenet.h5')
+classifier = load_model('model.h5')
 
 class_labels = {0: 'angry', 1: 'disgust', 2: 'fear', 3: 'happy', 4: 'neutral', 5: 'sad', 6: 'surprise'}
 
@@ -20,7 +20,6 @@ face_classifier = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 st.title("Face Emotion Detection")
 
 FRAME_WINDOW=st.image([])
-
 
 def face_detector(img):
     # Convert image to grayscale
