@@ -41,7 +41,7 @@ Open Command Prompt in the project directory
 Install dependencies
 
 ```bash
-  pip install -r requirement.txt
+  pip install -r requirements.txt
 ```
 
 Start local webcam
